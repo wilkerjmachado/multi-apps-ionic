@@ -1,0 +1,1 @@
+export { TesteComponent } from './teste/teste';
