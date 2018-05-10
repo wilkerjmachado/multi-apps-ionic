@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'teste',
   template: `<div>
-                {{text}} aquii
+                {{text}} oi
             </div>`
 })
 export class TesteComponent {
@@ -18,7 +18,7 @@ export class TesteComponent {
 
   constructor() {
     console.log('Hello TesteComponent Component');
-    this.text = 'Hello World teste 123 ';
+    this.text = 'Hello World 1234';
   }
 
 }

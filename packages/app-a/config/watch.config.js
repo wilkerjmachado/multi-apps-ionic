@@ -8,13 +8,17 @@ var copyConfig = require('../node_modules/@ionic/app-scripts/config/copy.config'
 // https://www.npmjs.com/package/chokidar
 
 module.exports = {
-  srcFiles: {
-    paths: [
-		'{{SRC}}/**/*.(ts|html|s(c|a)ss)',
-		'../estrutura-base-app/src/**/*.(ts|html|s(c|a)ss)'
-	],
-    options: { ignored: ['{{SRC}}/**/*.spec.ts', '{{SRC}}/**/*.e2e.ts', '**/*.DS_Store'] },
-    callback: watch.buildUpdate
-  },
-  copyConfig: copy.copyConfigToWatchConfig()
+    srcFiles: {
+        paths: [
+            '{{SRC}}/**/*.(ts|html|s(c|a)ss)',
+            // START: Custom Config....
+            '{{SRC}}/../../shared-components/**/*.(ts|html|s(c|a)ss)',
+            // END: Custom Config....
+        ],
+        options: {
+            ignored: ['{{SRC}}/**/*.spec.ts', '{{SRC}}/**/*.e2e.ts', '**/*.DS_Store']
+        },
+        callback: watch.buildUpdate
+    },
+    copyConfig: copy.copyConfigToWatchConfig()
 };

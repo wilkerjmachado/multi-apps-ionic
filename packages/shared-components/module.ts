@@ -15,5 +15,5 @@ import {TesteComponent} from "./teste/teste";
         IonicModule
     ]
 })
-export class ComponentesModule {
+export class SharedComponentsModule {
 }

@@ -8,7 +8,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {ComponentesModule} from "estrutura-base-app";
+import {SharedComponentsModule} from "../../../shared-components/module";
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import {ComponentesModule} from "estrutura-base-app";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    ComponentesModule
+    SharedComponentsModule,
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
