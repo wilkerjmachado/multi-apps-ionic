@@ -1,6 +1,6 @@
-## Get Started
+## Inicio
 
-### 1. Install & link dependencies
+### 1. Instalar dependencias
 
 ```
 cd multi-apps-ionic
@@ -11,7 +11,7 @@ cd ../app-b
 npm i
 ```
 
-### 2. When developing
+### 2. Em desenvolvimento
 
 ```
 ionic serve
