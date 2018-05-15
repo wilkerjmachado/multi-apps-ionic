@@ -1,22 +1,18 @@
-Estrutura para compartilhamento de codigo de aplicativos ionic
+## Get Started
 
-Para **estrutura-base-app** package:
+### 1. Install & link dependencies
 
 ```
-cd estrutura-base-app
+cd multi-apps-ionic
 npm i
-// compile typescript...
-npm run build 
-npm link
-```
-
-Para **app-consumidor** packages:
-
-```
-cd app-a
+cd ../app-a
 npm i
-// npm 'link' is not strictly necessary here,
-// as it's done by the 'ionic serve' command...
-// it's only here for reference purposes.
-npm link estrutura-base-app
+cd ../app-b
+npm i
+```
+
+### 2. When developing
+
+```
+ionic serve
 ```
